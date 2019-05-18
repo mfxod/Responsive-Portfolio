@@ -27,7 +27,6 @@ body {
   margin: 0 auto -105px;
 }
 
-footer,
 .push {
   height: 105px;
 }
@@ -45,9 +44,9 @@ nav a:hover {
   color: #5e7f7e;
 }
 
-.social:hover {
-  cursor: pointer;
-  opacity: 0.8;
+.work img:hover {
+  opacity: 1;
+  border: 2px solid #44aaa5;
 }
 
 /* end hover styling */
@@ -141,14 +140,15 @@ nav a:first-child {
 /* footer */
 
 footer {
-  padding: 30px 0;
   clear: both;
   font-size: 12px;
   color: #fff;
   color: #ccc;
   text-align: center;
   background: #666;
+  padding: 30px 0;
   border-top: 8px solid #4aaaa5;
+  height: 105px;
 }
 
 /* main */
@@ -160,7 +160,7 @@ footer {
 .main-section {
   float: left;
   width: 100%;
-  max-width: 960px;
+  max-width: 650px;
   padding: 30px;
   margin: 0 0 40px;
   background: #fff;
@@ -213,6 +213,7 @@ footer {
 
 #contact-form ul {
   margin-bottom: 20px;
+  list-style: none;
 }
 
 #contact-form li {
@@ -247,4 +248,63 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 980px) {
+
+.container {
+  max-width: 880px;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+.container {
+  max-width: 668px;
+}
+
+.main-section {
+  float: none;
+  overflow: auto;
+  max-width: 668px;
+  margin: 0 auto 40px;
+}
+  
+}
+
+@media only screen and (max-width: 640px) {
+
+#masthead {
+  position: static;
+}
+
+#logo {
+  width: 100%;
+}
+
+nav {
+  float: none;
+  text-align: center;
+  margin-top: 0px;
+}
+
+nav a {
+  padding: 15px;
+  margin: 15px;
+  border: none;
+}
+
+.main-container {
+  max-width: 540px;
+}
+
+.main-section {
+  float: none;
+  max-width: 540px;
+  margin: 0 auto 40px;
+}
+  
 }
