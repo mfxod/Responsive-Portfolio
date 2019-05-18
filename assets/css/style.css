@@ -297,6 +297,18 @@ nav a {
   border: none;
 }
 
+.work:nth-child(even) {
+  margin: auto;
+}
+
+.work {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin: 40px 0;
+  overflow: auto;
+}
+
 .main-container {
   max-width: 540px;
 }
